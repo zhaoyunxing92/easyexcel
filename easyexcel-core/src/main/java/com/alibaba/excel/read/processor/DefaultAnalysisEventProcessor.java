@@ -156,7 +156,7 @@ public class DefaultAnalysisEventProcessor implements AnalysisEventProcessor {
                 if (analysisContext.currentReadHolder().globalConfiguration().getAutoTrim()) {
                     headString = headString.trim();
                 }
-                if (headName.equals(headString)) {
+                if (headName.equals(headString) || headData.getAliases().contains(headString)) {
                     headData.setColumnIndex(stringKey);
                     tmpHeadMap.put(stringKey, headData);
                     break;
