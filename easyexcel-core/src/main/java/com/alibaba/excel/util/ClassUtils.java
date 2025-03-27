@@ -480,7 +480,7 @@ public class ClassUtils {
         // set heads
         if (excelProperty != null) {
             fieldWrapper.setHeads(excelProperty.value());
-            fieldWrapper.setHeads(excelProperty.aliases());
+            fieldWrapper.setAliases(excelProperty.aliases());
         }
 
         if (excelProperty != null && excelProperty.index() >= 0) {
